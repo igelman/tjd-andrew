@@ -1,0 +1,394 @@
+* {
+	font-family: 'Dosis', sans-serif;
+}
+
+/* general element definitions */
+img {
+	border: 0;
+} 
+
+img[src="images/tipjardaily.png"] {
+	width: 285px;
+	height: 62px;
+}
+
+section[templ=wrapper] header {
+	text-align: left;
+}
+section[templ=twoCol] {
+	clear: both;
+}
+
+[templ=wrapper] {
+	width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
+
+#searchBox {
+	float: right;
+}
+#searchBox table {
+	width: 410px;
+}
+
+#searchBox input[type=text] {
+	width: 300px;
+}
+
+[role=navigation] {
+	font-size: 11px;
+	width: 100%;
+}
+
+ul[class="nav navbar-nav"] {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul[class="nav navbar-nav"] span {
+	padding-left: 3px;
+	padding-right: 4px;
+	color: #fff;
+}
+
+
+
+center {
+	text-align: center;
+	margin: auto;
+	width: 1200px;
+}
+
+.ctr80 {
+	text-align: center;
+	margin: auto;
+	width: 80%;	
+}
+
+/* text alignments */
+.right {
+	text-align: right;
+}
+.left {
+	
+}
+.center {
+	text-align: center;
+}
+.ctr {
+	width: 900px;
+	margin: auto;
+	text-align: center;
+}
+
+.two200by200 {
+	width: 200px;
+}
+
+
+/* borders */
+.grey3 {
+	border-bottom: 3px solid #666;
+}
+
+/* floating selectors */
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+}
+.clearAll {
+	clear: both;
+}
+.clearHard {
+	margin: 10px 0;
+}
+
+article[title="expiring soon"] {
+	border-bottom: 3px solid #666;
+	margin-top: 15px;
+}
+
+
+/* section that has the menu */
+section#menu {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0 7px 0;
+}
+section#menu > ol {
+	list-style-type: none;
+}
+section#menu li {
+	display: inline;
+	margin: 0px 11px;
+}
+
+
+/* header elements (logo + search fields) */
+.w350 {
+	width: 350px;
+}
+.w110 {
+	width: 110px;
+}
+header {
+	padding: 20px 0;
+}
+.searchField {
+	margin-bottom: 5px;
+}
+#searchMerchants {
+	background-color: #3B0B2E;
+}
+#subscribeEmail {
+	background-color: #FBEFFB;
+}
+
+div[promotion=latest] {
+	text-align: left;
+}
+div[promo="2014"] {
+	color: #fff;
+}
+
+
+button[title="Browse Coupons"] {
+	color: #fff;
+	background-color: #705276;
+	font-size: 11px;
+	width: 100px;
+}
+#more_exp_soon {
+	text-align: left;
+}
+div[title="Today and This Week"]  {
+	text-align: left;
+}
+div[title="Send us a tip or coupon"] {
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+
+/* Featured Boxes */
+#featuredBoxes {
+	height: 310px;
+	padding-top: 10px;
+}
+
+#featuredBoxes section {
+	background-color: #fff;
+	width: 200px;
+	height: 300px;
+	float: left;
+	border-radius: 4px;
+}
+#featuredBoxes img {
+	padding-top: 13px;
+	height: 200px;
+}
+#featuredBoxes section[title*=Featuring] {
+	margin-right: 20px;
+}
+#featuredBoxes section[title*=Featuring] img {
+	margin-bottom: 10px;
+}
+
+#featuredBoxes cite[title] {
+	font-style: normal;
+	color: blue;
+}
+
+
+/* More expiring soon panel */
+.expBox {
+   margin-left: 40px; 
+   padding-bottom: 17px;
+   text-align: left;
+}
+.expBox div {
+	font-size: 11px;
+}
+
+#popularDeals, #greatTip {
+	text-align: left;
+}
+
+/* Popular Deals */
+#popularDeals ul, #popularMerchants ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#popularDeals ul li, #popularMerchants ul li {
+	list-style-type: none;
+	margin: 0;
+	color: #87CEFA;
+}
+#popularMerchants {
+	text-align: left;
+}
+
+#enterCode, #enterCodeDesc {
+	width: 80%;
+	margin-left: 20px
+}
+
+
+/* Panels */
+.widerPanel {
+	width: 530px;
+}
+.shorterPanel {
+	width: 340px;
+}
+#subscribeViaEmail {
+	width: 200px;
+	display:inline;
+}
+#subscribe {
+	width: 100px;
+}
+#subscribeDailyEmailbtn {
+	width: 265px;
+}
+#quickOffersHeader {
+	color: #fff;
+	background-color: #228B22;
+}
+#quickOffersBodySearch {
+	color: #fff;
+	margin: 15px;
+}
+#quickOffersBodyCount {
+	width: 100%;
+	height: 55px;
+	background-color: #c0c0c0;
+	color: #fff;
+	padding: 15px;
+}
+#quickOfferTbl {
+	background-color: #F8F8F8;
+	width: 100%;
+}
+#quickOfferTbl th {
+	padding: 7px;
+}
+
+
+#quickOfferTbl td {
+	text-align: left;
+	padding: 2px;
+	font-size: 11px;
+}
+
+
+/* Latest Deals Panel */
+
+#latestDeals {
+	height: 100%;
+}
+
+#latestDeals ul {
+	list-style: none;
+	list-style-type: none;
+	text-align: left;
+	color: #81BEF7;
+}
+.latestDealsBox {
+	background-color:#fff; 
+	border-radius: 4px; 
+	padding: 10px;
+	margin-bottom: 10px;
+}
+#latestDeals .panel-body {
+	background-color: #F8F8FF;
+}
+
+div[caption=sale] {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+div[caption=sale] span {
+	color: orange;
+}
+div[title="Apparel"] {
+	padding-right: 100px; 
+	margin-top:3px
+}
+p[code*=sale], [sale*=headliner], [title="View More"], div[caption=sale], div[title="Subscribe via Email"]  {
+	text-align: left;
+}
+[sale*="props"] {
+	font-size: 11px;
+}
+[sale*=headliner] {
+	margin-bottom: 5px;
+}
+span[title="Welcome to TipJarDaily"] {
+	font-size: 18px;
+}
+span[title="View all your favorites"] {
+	font-size: 12px;
+	padding-left: 90px;
+}
+span[title="Our Mission"], div[title="Customer Support"] {
+	font-size: 12px;
+}
+tr[line="first"] {
+	padding: 10px 0 10px;
+}
+tr[line="second"] {
+	padding-bottom: 20px;
+}
+td[title="bird"] {
+	padding-left: 40px;
+}
+tr[line="third"] {
+	padding: 30px 0 30px;
+	height: 120px
+}
+div[copyright="last"] {
+	background-color: black; 
+	height: 60px; 
+	text-align: left;
+	padding: 20px 0 0 40px
+}
+
+footer {
+	clear:both; 
+	color:white; 
+	height: 100px
+}
+footer > table {
+	width: 100%;
+	background-color: #383838;
+}
+
+/* Background colors */
+.lightGrey {
+	background-color: #c0c0c0;
+}
+
+/* colors */
+.white {
+	color: #fff;
+}
+
+.lightBlue {
+	color: #87CEFA;
+}
+.blue {
+	color: blue;
+}
+.orange {
+	color: orange;
+}
