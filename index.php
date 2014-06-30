@@ -111,20 +111,12 @@ get_header();
 		</table>
 				</div>
 			</div> <!-- .floatLeft -->
-		</div> <!-- ends the right side (1st column) -->
+		</section> <!-- ends the right side (1st column) -->
+  <!-- This looks like a stray div closing tag or maybe it should be section closing -->
+
   
-	<div class="panel panel-default shorterPanel floatRight">
-	     <div class="panel-heading left" title="Subscribe via Email">
-			 <h3 class="panel-title">SUBSCRIBE VIA EMAIL</h3>
-		 </div>
-		 <div class="panel-body">
-		    <label class="sr-only" for="subscribeViaEmail">Subscribe Via Email</label>
-		    <input type="text" class="form-control w350 f11" id="subscribeViaEmail" placeholder="Email Address">
-			<button id="subscribe" type="button" class="btn">Subscribe!</button>
-		 </div>
-	  </div>   
 	   
-		
+		<?php get_template_part( 'email-signup') ?>
 		<?php get_template_part( 'expiring-soon') ?>
 	   
 	   

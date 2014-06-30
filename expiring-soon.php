@@ -9,7 +9,7 @@
 		
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
@@ -25,7 +25,7 @@
 
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
@@ -41,7 +41,7 @@
 
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
@@ -57,7 +57,7 @@
 
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
@@ -73,7 +73,7 @@
 
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
@@ -89,7 +89,7 @@
 
 		<article title="expiring soon">
 			<div class="floatLeft">
-				<img src="images/star.png">
+				<img src="<?php bloginfo('template_directory') ?>/assets/images/star.png">
 			</div>
 			<div class="expBox">
 				<div>
