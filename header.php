@@ -26,7 +26,15 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-    <link href="<?php bloginfo('template_directory') ?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!-- My stylesheet call has media attribute that Andrew's does not     <link href="<?php bloginfo('template_directory') ?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <link href="<?php bloginfo('template_directory') ?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/assets/css/fonts.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/assets/css/master.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/assets/css/margin.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/assets/bootstrap/css/padding.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
 	<?php wp_head(); ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
