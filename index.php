@@ -29,31 +29,32 @@ get_header();
     <section templ="wrapper">
 		<?php get_template_part( 'navbar') ?>
 		<?php get_template_part( 'tiles-top') ?>
-
-	   
-	    
-	  <section templ="twoCol">
-	  
-	   <div class="floatLeft">
-		<?php get_template_part( 'deals' ) ?>	  
-
-	   <div class="panel panel-default" style="height: 350px;">
-	     <div class="panel-heading left quickOffersHeader" id="quickOffersHeader">
-			 <h3 class="panel-title"><span>QUICK OFFERS</span>
-				 <span title="View all your favorites">View all your favorite stores and coupons at a glance</span></h3>
-		 </div>
-		 <div class="panel-body" style="background-color:#000; padding:0">
-		    <div id="quickOffersBodySearch">
-				<div>
-				  <div class="floatLeft f15" title="Apparel">APPAREL (247)</div>
-				  <div><label class="sr-only" for="apparelSearch">Apparel Search</label> <input type="text" style="width: 300px" class="form-control f11" id="apparelSearch" placeholder="SEARCH FOR A STORE"></div>
-				</div>
-			</div>		
-		 </div>
-	     <div id="quickOffersBodyCount">
-			  <div class="floatLeft f15">APPAREL (247 Merchants)</div>
-		</div>
-		 <table id="quickOfferTbl">
+		
+		<section templ="twoCol">
+			<div class="floatLeft">
+				<?php get_template_part( 'deals' ) ?>
+				<div class="panel panel-default" style="height: 350px;">
+					<div class="panel-heading left quickOffersHeader" id="quickOffersHeader">
+						<h3 class="panel-title"><span>QUICK OFFERS</span><span title="View all your favorites">View all your favorite stores and coupons at a glance</span></h3>
+					</div> <!-- .panel-heading left quickOffersHeader -->
+					<div class="panel-body" style="background-color:#000; padding:0">
+						<div id="quickOffersBodySearch">
+							<div>
+								<div class="floatLeft f15" title="Apparel">APPAREL (247)
+								</div>
+								<div>
+									<label class="sr-only" for="apparelSearch">Apparel Search
+									</label>
+									<input type="text" style="width: 300px" class="form-control f11" id="apparelSearch" placeholder="SEARCH FOR A STORE">
+								</div>
+							</div>
+						</div> <!-- #quickOffersBodySearch -->
+					</div> <!-- .panel-body -->
+					<div id="quickOffersBodyCount">
+						<div class="floatLeft f15">APPAREL (247 Merchants)
+						</div>
+					</div> <!-- #quickOffersBodyCount -->
+					<table id="quickOfferTbl">
 			<thead>
 				<tr>
 					<th>Store</th>
@@ -108,10 +109,9 @@ get_header();
 				</tr>
 			</tbody>
 		</table>
-	   </div>   
-      </div>
-	  
-	</div> <!-- ends the right side (1st column) -->
+				</div>
+			</div> <!-- .floatLeft -->
+		</div> <!-- ends the right side (1st column) -->
   
 	<div class="panel panel-default shorterPanel floatRight">
 	     <div class="panel-heading left" title="Subscribe via Email">
