@@ -32,8 +32,20 @@
 	<link href="<?php bloginfo('template_directory') ?>/assets/css/fonts.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory') ?>/assets/css/master.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory') ?>/assets/css/margin.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_directory') ?>/assets/bootstrap/css/padding.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/assets/css/padding.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+<!-- Andrew has these two meta tags that I did not-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- And these should go in a stylesheet-->
+	<style>
+	/* Overidden */
+	.well {
+		background-color: #606060;
+	}
+	</style>
 
 	<?php wp_head(); ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
