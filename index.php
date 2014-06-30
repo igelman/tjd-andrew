@@ -572,8 +572,6 @@ get_template_part( 'navbar' );
 		</div>
 	 </footer>
 	</div>
-   </section>	
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</html>
+   </section>
+
+<?php get_footer(); ?>
