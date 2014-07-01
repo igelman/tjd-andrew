@@ -33,7 +33,17 @@ if ( $query->have_posts() ) {
 			}
 		}
 
-		
+ 		$product_types = wp_get_post_terms( $id, "product_type", ["fields" => "all"] );
+// 		$terms = print_r($product_types,TRUE);
+ 		
+ 		if ( !empty($product_types) ) {
+ 			$view_more = "<p title='View More'>View more in";
+			foreach ($product_types AS $product) {
+				$view_more .= " <a class='more' href='" . $product->slug . "'>" . $product->name . "</a>,";
+			}
+			$view_more .= "</p>";
+		}
+
 		$article = <<<ARTICLE
 		<div id='deals-$id' class='latestDealsBox'> <!-- start b -->
 			<div class='floatLeft pb10 mr10 two200by200'>
@@ -63,6 +73,7 @@ if ( $query->have_posts() ) {
 				</p>
 				$coupons
 				$deal
+				$view_more
 				<div sale='props-headliner'>
 					Stock up on stylish essentials for a steal with the Warehouse Event at Land's End, down jackets, vests, shoes and more - plus free shipping on $50. Some picks:
 				</div>
