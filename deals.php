@@ -71,9 +71,6 @@ if ( $query->have_posts() ) {
 					<span class='blue'>PIN:</span><span class='orange'>1490</span>
 					<span>(EXP.3/31)</span>
 				</p>
-				$coupons
-				$deal
-				$view_more
 				<div sale='props-headliner'>
 					Stock up on stylish essentials for a steal with the Warehouse Event at Land's End, down jackets, vests, shoes and more - plus free shipping on $50. Some picks:
 				</div>
@@ -87,6 +84,14 @@ if ( $query->have_posts() ) {
 				<p title='View More'>
 					View more in <a class='more' href='#'>Apparel</a>, <a href='#'>Gifts</a>, <a href='#'>Jewelry</a>
 				</p>
+
+
+				<div caption='sale'><a href='$url'>$title</a>
+				</div>
+				$coupons
+				$deal
+				$view_more
+
 			</div>	<!-- ends a -->
 
 		</div> <!-- .latestDealsBox -->
