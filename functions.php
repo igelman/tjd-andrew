@@ -7,6 +7,7 @@ $html5Args = array(
 add_theme_support( 'html5', $html5Args );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 300, 300, false );
+add_image_size( "deal-thumb", 200, 200, false );
 
 // Register Navigation Menus
 function custom_navigation_menus() {
