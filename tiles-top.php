@@ -25,49 +25,32 @@ if ( $query->have_posts() ) {
 		$title = get_the_title();
 		$caption = get_the_content();
 		
+		$image_repo = get_bloginfo('template_directory') . "/assets/images/";
+		$img_src = "http://placehold.it/200"; // $image_repo . "shoe.png";  Use the deal-thumb rendition with get_the_post_thumbnail( $post_id, $size, $attr );
+
+		
 		$tile = <<<TILE
+		<section id='tile-$id' title='Featuring Amazon'>
+			<a href='$url'><img src='http://placehold.it/170x200'></a>
+			<p>
+				<a href='$url'><cite title='Featured Deal'>$title</cite></a>
+			</p>
+		</section>
 TILE;
 		$content .= $tile;
 		$tilesCount++;
 	}
 }
-
+wp_reset_postdata();
 ?>
 
 <div class="well">
-		  <div promotion="latest">		  	
-		    <div promo="2014">
-			   <span class="f18">STYLE: WOMEN'S APPAREL, SHOES &amp; ACCESSORIES</span><span> UPDATED IN THE PAST 24 HOURS</span>
-			</div>		
-		  </div>		
-		  <div id="featuredBoxes">			   
-				   <section title="Featuring Amazon">
-					   <img src="images/amazon.png">
-					   <p>
-					   <cite title="Featured Deal">100 MP3 Albums $5 each</cite>
-					   (Josh Turner, Maroon 5, Jay Z, The Killers and more)
-				       </p>
-				   </section>
-				   <section title="Featuring Shoes">
-					   <img src="images/shoes.png">
-					   <p>
-					   <cite title="Featured Deal">100 MP3 Albums $5 each</cite>
-					   (Josh Turner, Maroon 5, Jay Z, The Killers and more)
-				       </p>
-				   </section>
-				   <section title="Featuring Kohls">
-					   <img src="images/kohls.png">
-					   <p>
-					   <cite title="Featured Deal">100 MP3 Albums $5 each</cite>
-					   (Josh Turner, Maroon 5, Jay Z, The Killers and more)
-				       </p>
-				   </section>
-				   <section title="Redbox" title="Featured Deal">
-					   <img src="images/redbox.png">
-					   <p style="margin-top: 10px">
-					   <cite title="Featured Deal">100 MP3 Albums $5 each</cite>
-					   (Josh Turner, Maroon 5, Jay Z, The Killers and more)
-				       </p>
-				   </section>				
-		    </div>
-	  </div>
+	<div promotion="latest">
+		<div promo="2014">
+			<span class="f18">STYLE: WOMEN'S APPAREL, SHOES &amp; ACCESSORIES</span><span> UPDATED IN THE PAST 24 HOURS</span>
+		</div>
+	</div>
+	<div id="featuredBoxes">
+		<?php echo $content; ?>
+	</div> <!-- #featuredBoxes -->
+</div>
