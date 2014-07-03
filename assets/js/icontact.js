@@ -19,7 +19,8 @@ function bindSubscribeButton() {
 		}
 		
 		var url = 'http://localhost/development/icontact-service/icontact-service.php';
-	
+// http://www.icontact.com/developerportal/documentation/contacts/
+// https://github.com/icontact/icontact-api-php/blob/master/lib/iContactApi.php	
 		var posting = $.post(
 			url,
 			{
