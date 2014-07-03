@@ -37,17 +37,10 @@
 			</button>
 		</div>
 		<div class="navbar-collapse collapse">
-          	<ul class="nav navbar-nav">
-          		<li><a href="#">HOME <span>&#124;</span></a></li>
-          		<li><a href="#">WOMEN'S <span>&#124;</span></a></li>
-          		<li><a href="#">MEN'S <span>&#124;</span></a></li>
-          		<li><a href="#">KID'S <span>&#124;</span></a></li>
-          		<li><a href="#">FREE + IN-STORE <span>&#124;</span></a></li>
-          		<li><a href="#">BEAUTY + HEALTH <span>&#124;</span></a></li>
-          		<li><a href="#">ELECTRONICS <span>&#124;</span></a></li>
-          		<li><a href="#">FOOD + GIFTS <span>&#124;</span></a></li>
-          		<li><a href="#">DEAL-OF-THE-DAY</a></li>
-          	</ul>
+			<?php
+			// Insert menu.php
+			get_template_part(menu);
+			?>
         </div>
     </div>
 </div>   
