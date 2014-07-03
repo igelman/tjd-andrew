@@ -47,7 +47,7 @@ wp_reset_postdata();
 <div class="well">
 	<div promotion="latest">
 		<div promo="2014">
-			<span class="f18">STYLE: WOMEN'S APPAREL, SHOES &amp; ACCESSORIES</span><span> UPDATED IN THE PAST 24 HOURS</span>
+			<span class="f18">TODAY'S FEATURED TIPS</span><span> UPDATED IN THE PAST 24 HOURS</span>
 		</div>
 	</div>
 	<div id="featuredBoxes">
