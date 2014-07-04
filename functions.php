@@ -34,14 +34,6 @@ function getFutureDate($start='today', $interval='1 week') {
 	return date_add( date_create($start), date_interval_create_from_date_string( $interval ) );
 }
 
-function makeAnchor($url, $innerText, $attributeArray=array()) {
-	$attributes = "";
-	foreach($attributeArray as $attribute => $value) {
-		$attributes .= "$attribute='$value' ";
-	}
-	return "<a href='$url' $attributes>$innerText</a>";
-}
-
 function getPostFields($postId) {
 	$post = get_post( $postId, "OBJECT", "raw" ); // filter should probably sanitize ...
 	$content = $post->content;
@@ -60,28 +52,30 @@ function createQuery($wp_query, $postType, $extraArgs=array()) {
 /**
 * Returns value tax_query for WP_Query args.
 * Restricts WP_Query results to selected taxonomy.
+*
+* This might be useful: http://codex.wordpress.org/Function_Reference/is_tax
 */
 function composeTaxonomyQueryArg($terms) {
 	if ($terms) {
 		$term = $terms->slug;
 		$taxonomy = $terms->taxonomy;
-		return array(
+		return [
 			'relation'	=> 'AND',
-			array(
+			[
 				'taxonomy'	=> $taxonomy,
 				'field'		=> 'slug',
 				'terms'		=>	$terms,
-			),
-		);
+			],
+		];
 	}
-	return array();
+	return [];
 }
 
 function composeQueryArg($postType, $taxonomyTerms, $extraArgs=array()) {
-	return array_merge ( array (
+	return array_merge ( [
 		'post_type'		=> $postType, //'tmt-deal-posts',
 		'tax_query'		=> composeTaxonomyQueryArg($taxonomyTerms),
-	), $extraArgs );
+	], $extraArgs );
 }
 
 function getTaxonomyTerms($wp_query) {
